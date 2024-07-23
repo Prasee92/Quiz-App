@@ -100,7 +100,7 @@ function nextQuestion(){
     selectedAnswerList.push(selectedAnswer);
     qIndex++;
 
-    //Show result
+    //Result
     if(qIndex===10){
         document.getElementById('formcontent').style="display:none";
         document.getElementById('questionNumber').style="display:none";
@@ -130,7 +130,7 @@ function setName(){
     document.getElementById('username').innerText="Hello "+document.cookie.split('=')[1]+"!";
 }
 
-//Answer selection
+//Answer
 function answer1(){
     oldSelectedAnswer=selectedAnswer;
     selectedAnswer=0;
@@ -156,7 +156,7 @@ function answer4(){
     unselectAnswer();
 }
 
-//Select answer
+//Answer select
 function selectAnswer(){
     selectedAnswerList.push(selectedAnswer);
     switch(selectedAnswer){
@@ -231,7 +231,6 @@ function mapCorrectAnswers(){
     }
 }
 
-//Replay button
 function replay(){
     window.location.href = window.location.href.replace("/html/questions.html","");
 }
