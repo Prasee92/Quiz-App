@@ -2,9 +2,9 @@ var data;
 var qIndex=0;
 var answerList=[];
 var tempList=[];
-//Correct answer list
+
 var correctAnswersList=[];
-//User selected answer list
+
 var selectedAnswerList=[];
 
 var selectedAnswer=5;
@@ -27,7 +27,7 @@ function countTimer(){
     }
 }
 
-//timer
+//timerReset
 function timerReset(){
     timer=30;
 }
